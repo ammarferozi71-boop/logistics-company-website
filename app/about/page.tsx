@@ -5,9 +5,9 @@ import { Team } from "@/components/team"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "About Us | Great Eastern Company - Pioneer Clearing & Forwarding Agents Since 1950",
-  description: "Learn about Great Eastern Company, a pioneer clearing & forwarding agent with 75+ years of experience in customs clearance and consulting services in Pakistan.",
-  keywords: ["about GEC", "Great Eastern Company history", "customs clearing agent Karachi", "freight forwarder Pakistan", "since 1950"],
+  title: "About Us | Great Eastern Company - Pioneer Clearing & Forwarding Agents Since 1981",
+  description: "Learn about Great Eastern Company, a pioneer clearing & forwarding agent with 45+ years of experience in customs clearance and consulting services in Pakistan.",
+  keywords: ["about GEC", "Great Eastern Company history", "customs clearing agent Karachi", "freight forwarder Pakistan", "since 1981"],
 }
 
 export default function AboutPage() {

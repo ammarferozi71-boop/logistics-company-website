@@ -3,9 +3,33 @@ import { FileText, Ship, Package, Award, ClipboardCheck, Calculator, Shield, Tru
 const services = [
   {
     icon: FileText,
-    title: "Customs Consulting",
-    description: "Specialized consulting services to streamline international trade operations with comprehensive knowledge of customs regulations.",
-    features: ["Statutory Regulatory Orders (SROs)", "Customs Compliance", "Duty and Tax Optimization", "Risk Mitigation"],
+    title: "Customs Act & Rules",
+    description: "Advisory on Customs Act 1969, customs rules and regulatory compliance for import and export operations.",
+    features: ["Customs Act 1969 guidance", "Customs Rules advisory", "Regulatory interpretation", "Duty liability analysis"],
+  },
+  {
+    icon: Calculator,
+    title: "Customs Tariff",
+    description: "Custom tariff consultation with accurate duty calculations, classification support, and tariff schedule interpretation for the latest 2025-26 tariff schedule.",
+    features: ["2025-26 tariff schedule review", "Duty rate advisory", "HS classification support", "SRO tariff updates"],
+  },
+  {
+    icon: Package,
+    title: "HS Code Classification",
+    description: "Harmonized System code classification for precise customs declarations and duty optimization.",
+    features: ["HS code assignment", "Classification accuracy", "Tariff alignment", "Import/export compliance"],
+  },
+  {
+    icon: Shield,
+    title: "NTN Inquiry Support",
+    description: "NTN verification and compliance support for importers, exporters, and customs stakeholders.",
+    features: ["NTN verification", "Importer validation", "Tax compliance checks", "Registration support"],
+  },
+  {
+    icon: ClipboardCheck,
+    title: "SRO Import Advisory",
+    description: "Import-related SRO review, notifications, and exemption support for customs duty relief.",
+    features: ["SRO import updates", "Exemption eligibility", "Notification monitoring", "Import policy advisory"],
   },
   {
     icon: Ship,
@@ -20,7 +44,7 @@ const services = [
     features: ["Duty Free Imports", "EFS Membership", "License Extension to Clients", "Commercial Importer Support"],
   },
   {
-    icon: ClipboardCheck,
+    icon: FileText,
     title: "DTRE Services",
     description: "Duty & Tax Remission for Exports scheme facilitation with a rich history of offering comprehensive DTRE and EOU services.",
     features: ["Duty Remission", "Tax Exemptions", "EOU Support", "Compliance Management"],

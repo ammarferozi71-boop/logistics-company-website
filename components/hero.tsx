@@ -26,7 +26,7 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              75+ Years of Excellence
+              45+ Years of Excellence
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground leading-tight text-balance">
@@ -35,7 +35,7 @@ export function Hero() {
             </h1>
             
             <p className="mt-6 text-lg text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Great Eastern Company has been the preferred partner for customs clearance and consulting services since 1950. 
+              Great Eastern Company has been the preferred partner for customs clearance and consulting services since 1981. 
               We drive global trade efficiency and compliance while exceeding client expectations.
             </p>
             
@@ -54,7 +54,7 @@ export function Hero() {
             {/* Trust indicators */}
             <div className="mt-12 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
               <div className="text-center lg:text-left">
-                <div className="text-3xl font-bold text-accent">75+</div>
+                <div className="text-3xl font-bold text-accent">45+</div>
                 <div className="text-sm text-primary-foreground/70">Years Experience</div>
               </div>
               <div className="text-center lg:text-left">

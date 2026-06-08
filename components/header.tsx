@@ -35,7 +35,7 @@ export function Header() {
               </a>
             </div>
             <div className="w-full sm:w-auto text-center sm:text-right">
-              <span className="text-accent font-medium">Trusted Since 1950</span>
+              <span className="text-accent font-medium">Trusted Since 1981</span>
             </div>
           </div>
         </div>

@@ -26,14 +26,14 @@ export function About() {
             <div className="aspect-square rounded-2xl overflow-hidden bg-muted">
               <Image
                 src="/images/logo.jpeg"
-                alt="Great Eastern Company - Since 1950"
+                alt="Great Eastern Company - Since 1981"
                 fill
                 className="object-contain p-8"
               />
             </div>
             {/* Experience badge */}
             <div className="absolute -bottom-6 -right-6 bg-accent text-accent-foreground rounded-xl p-6 shadow-xl">
-              <div className="text-4xl font-bold">75+</div>
+              <div className="text-4xl font-bold">45+</div>
               <div className="text-sm">Years of Trust</div>
             </div>
           </div>

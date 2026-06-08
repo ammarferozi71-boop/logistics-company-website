@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Great Eastern Company | Custom Clearing Agent & Consultant Since 1950',
-  description: 'Great Eastern Company (GEC) is a pioneer customs clearing and forwarding agent in Pakistan with 75+ years of experience. We specialize in customs consulting, import/export clearance, EFS licensing, and DTRE services.',
+  title: 'Great Eastern Company | Custom Clearing Agent & Consultant Since 1981',
+  description: 'Great Eastern Company (GEC) is a pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience. We specialize in customs consulting, import/export clearance, EFS licensing, and DTRE services.',
   keywords: 'customs clearing agent, customs consultant, import clearance, export clearance, EFS license, DTRE, freight forwarding, Karachi customs, Pakistan logistics, duty free license, customs house agent',
   authors: [{ name: 'Great Eastern Company' }],
   creator: 'Great Eastern Company',
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Great Eastern Company | Custom Clearing Agent & Consultant Since 1950',
-    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 75+ years of experience. Specializing in customs consulting, import/export clearance, and EFS licensing.',
+    title: 'Great Eastern Company | Custom Clearing Agent & Consultant Since 1981',
+    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience. Specializing in customs consulting, import/export clearance, and EFS licensing.',
     url: 'https://greateasterncompany.com',
     siteName: 'Great Eastern Company',
     locale: 'en_US',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Great Eastern Company | Custom Clearing Agent & Consultant',
-    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 75+ years of experience.',
+    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience.',
     images: ['/images/logo.jpeg'],
   },
   robots: {
@@ -92,8 +92,8 @@ export default function RootLayout({
               "alternateName": "GEC",
               "url": "https://greateasterncompany.com",
               "logo": "https://greateasterncompany.com/images/logo.jpeg",
-              "foundingDate": "1950",
-              "description": "Pioneer customs clearing and forwarding agent in Pakistan with 75+ years of experience",
+              "foundingDate": "1981",
+              "description": "Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Suit 209, Techno City Office Tower, Hasrat Muhanni Road",

@@ -13,7 +13,11 @@ const navigation = [
 ]
 
 const services = [
-  "Customs Consulting",
+  "Customs Act & Rules",
+  "Customs Tariff",
+  "HS Code Classification",
+  "NTN Inquiry Support",
+  "SRO Import Advisory",
   "Customs Clearance",
   "EFS Licensing",
   "DTRE Services",
@@ -39,11 +43,11 @@ export function Footer() {
               />
               <div>
                 <h3 className="text-lg font-bold leading-tight">Great Eastern Co.</h3>
-                <p className="text-xs text-primary-foreground/70">Since 1950</p>
+                <p className="text-xs text-primary-foreground/70">Since 1981</p>
               </div>
             </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-6">
-              Pioneer clearing & forwarding agents with 75+ years of experience, trust, and efficient service 
+              Pioneer clearing & forwarding agents with 45+ years of experience, trust, and efficient service 
               in customs clearance and consulting.
             </p>
             <p className="text-sm text-primary-foreground/70">

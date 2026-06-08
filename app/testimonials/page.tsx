@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Client Testimonials | Great Eastern Company",
-  description: "Read what our valued clients say about Great Eastern Company's customs clearance and consulting services. 75+ years of trusted service in Pakistan.",
+  description: "Read what our valued clients say about Great Eastern Company's customs clearance and consulting services. 45+ years of trusted service in Pakistan.",
 }
 
 const testimonials = [
@@ -51,7 +51,7 @@ const testimonials = [
     company: "Indigo Textile (Pvt) Ltd",
     position: "CEO",
     rating: 5,
-    review: "75 years of experience truly shows in their service quality. Their deep knowledge of customs procedures has saved us countless hours and significant costs. As a textile manufacturer, we rely heavily on imported machinery and raw materials. GEC understands our needs and consistently delivers exceptional service. Their professional team has become an extension of our own operations.",
+    review: "45 years of experience truly shows in their service quality. Their deep knowledge of customs procedures has saved us countless hours and significant costs. As a textile manufacturer, we rely heavily on imported machinery and raw materials. GEC understands our needs and consistently delivers exceptional service. Their professional team has become an extension of our own operations.",
     highlight: "Trusted by industry leaders"
   },
   {
@@ -126,7 +126,7 @@ export default function TestimonialsPage() {
                 <p className="text-muted-foreground">Satisfied Clients</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-accent">75+</p>
+                <p className="text-4xl font-bold text-accent">45+</p>
                 <p className="text-muted-foreground">Years of Service</p>
               </div>
               <div>

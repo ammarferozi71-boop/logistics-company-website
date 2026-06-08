@@ -59,8 +59,8 @@ export const testimonials: Testimonial[] = [
     company: "Indigo Textile (Pvt) Ltd",
     image: "/images/testimonials/client-5.jpg",
     rating: 5,
-    review: "75 years of experience truly shows. Their deep knowledge of customs procedures has saved us countless hours.",
-    fullReview: "75 years of experience truly shows. Their deep knowledge of customs procedures has saved us countless hours. As a textile manufacturer, we rely heavily on imported machinery and raw materials. GEC understands our needs and consistently delivers exceptional service with their professional and knowledgeable team."
+    review: "45 years of experience truly shows. Their deep knowledge of customs procedures has saved us countless hours.",
+    fullReview: "45 years of experience truly shows. Their deep knowledge of customs procedures has saved us countless hours. As a textile manufacturer, we rely heavily on imported machinery and raw materials. GEC understands our needs and consistently delivers exceptional service with their professional and knowledgeable team."
   },
   {
     id: 6,

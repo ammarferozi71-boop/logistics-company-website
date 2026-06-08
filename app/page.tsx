@@ -27,6 +27,11 @@ const services = [
     title: "DTRE Services",
     description: "Duty & Tax Remission for Exports facilitation",
   },
+  {
+    icon: FileText,
+    title: "HS Code Classification",
+    description: "Accurate HS code support for customs declarations and tariff compliance",
+  },
 ]
 
 const featuredClients = [
@@ -85,10 +90,10 @@ export default function Home() {
               <div>
                 <span className="text-accent font-medium text-sm tracking-wider uppercase">Why Choose Us</span>
                 <h2 className="mt-2 text-3xl sm:text-4xl font-serif font-bold text-foreground mb-6">
-                  75+ Years of Trust & Excellence
+                  45+ Years of Trust & Excellence
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                  As pioneer clearing & forwarding agents since 1950, our name and reputation are built upon 
+                  As pioneer clearing & forwarding agents since 1981, our name and reputation are built upon 
                   a solid foundation of experience, trust, and efficient service. We hold Customs House 
                   License No. 810 and serve leading businesses across Pakistan.
                 </p>
