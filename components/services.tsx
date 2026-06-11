@@ -1,7 +1,7 @@
-import { FileText, Ship, Truck, type LucideIcon } from "lucide-react"
+import { FileText, Ship, Truck } from "lucide-react"
 
 type Service = {
-  icon: LucideIcon
+  icon: typeof Ship
   title: string
   description: string
   summary?: string
@@ -207,83 +207,89 @@ export function Services() {
 
         {/* Main services */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className={`bg-card rounded-lg p-8 border border-border ${
-                service.serviceSections ? "lg:col-span-3" : ""
-              }`}
-            >
+          {services.map((service) => {
+            const Icon = service.icon
+
+            return (
+            <div key={service.title} className="bg-card rounded-2xl p-8 border border-border">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary text-primary-foreground mb-6">
-                <service.icon className="h-7 w-7" />
+                <Icon className="h-7 w-7" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">{service.title}</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
-              {service.summary ? <p className="text-muted-foreground mb-6 leading-relaxed">{service.summary}</p> : null}
+              <details className="group">
+                <summary className="cursor-pointer list-none text-sm font-semibold text-primary underline-offset-4 hover:underline">
+                  Read more
+                </summary>
+                <div className="mt-5 space-y-6">
+                  {service.summary ? <p className="text-muted-foreground leading-relaxed">{service.summary}</p> : null}
 
-              {service.serviceSections ? (
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-                  {service.serviceSections.map((section) => (
-                    <div key={section.title} className="border-l-2 border-accent pl-4">
-                      <h4 className="font-semibold text-foreground mb-2">{section.title}</h4>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{section.description}</p>
+                  {service.serviceSections ? (
+                    <div className="space-y-5">
+                      {service.serviceSections.map((section) => (
+                        <div key={section.title} className="border-l-2 border-accent pl-4">
+                          <h4 className="font-semibold text-foreground mb-2">{section.title}</h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{section.description}</p>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              ) : null}
-
-              {service.referenceMaterials ? (
-                <div className="mb-8">
-                  <h4 className="font-semibold text-foreground mb-3">
-                    {service.referenceTitle ?? "Regulatory & Documentation Support"}
-                  </h4>
-                  {service.referenceIntro ? (
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">{service.referenceIntro}</p>
                   ) : null}
-                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                    {service.referenceMaterials.map((material) => (
-                      <li key={material} className="flex items-start gap-2 text-sm text-foreground">
-                        <div className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
-                        <span>{material}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
 
-              {service.strengths ? (
-                <div className="mb-8">
-                  <h4 className="font-semibold text-foreground mb-3">Why Choose Great Eastern Company?</h4>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-                    {service.strengths.map((strength) => (
-                      <li key={strength} className="text-sm font-medium text-foreground">
-                        {strength}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ) : null}
+                  {service.referenceMaterials ? (
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3">
+                        {service.referenceTitle ?? "Regulatory & Documentation Support"}
+                      </h4>
+                      {service.referenceIntro ? (
+                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">{service.referenceIntro}</p>
+                      ) : null}
+                      <ul className="space-y-2">
+                        {service.referenceMaterials.map((material) => (
+                          <li key={material} className="flex items-start gap-2 text-sm text-foreground">
+                            <div className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                            <span>{material}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
 
-              {service.closing ? <p className="text-muted-foreground leading-relaxed">{service.closing}</p> : null}
-              {service.links ? (
-                <ol className="mt-6 space-y-2 list-decimal list-inside text-sm text-foreground">
-                  {service.links.map((link) => (
-                    <li key={link.href}>
-                      <span className="font-medium">{link.label}: </span>
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-medium text-primary underline-offset-4 hover:underline"
-                      >
-                        Open link
-                      </a>
-                    </li>
-                  ))}
-                </ol>
-              ) : null}
+                  {service.strengths ? (
+                    <div>
+                      <h4 className="font-semibold text-foreground mb-3">Why Choose Great Eastern Company?</h4>
+                      <ul className="space-y-2">
+                        {service.strengths.map((strength) => (
+                          <li key={strength} className="text-sm font-medium text-foreground">
+                            {strength}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ) : null}
+
+                  {service.closing ? <p className="text-muted-foreground leading-relaxed">{service.closing}</p> : null}
+                  {service.links ? (
+                    <ol className="space-y-2 list-decimal list-inside text-sm text-foreground">
+                      {service.links.map((link) => (
+                        <li key={link.href}>
+                          <span className="font-medium">{link.label}: </span>
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-medium text-primary underline-offset-4 hover:underline"
+                          >
+                            Open link
+                          </a>
+                        </li>
+                      ))}
+                    </ol>
+                  ) : null}
+                </div>
+              </details>
             </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
