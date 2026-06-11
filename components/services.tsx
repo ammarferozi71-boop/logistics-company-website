@@ -6,6 +6,16 @@ const services = [
     title: "Customs Clearance",
     description: "Efficient customs clearance for imports and exports with complete documentation and customs processing.",
     features: ["Import and export clearance", "Documentation management", "Customs submission support", "Compliance monitoring"],
+    links: [
+      { label: "Custom Act/Rules", href: "https://www.fbr.gov.pk/categ/customs-act-1969/130" },
+      { label: "Custom Tariff", href: "https://download1.fbr.gov.pk/Docs/20258111683941732Tariff-2025-26.pdf" },
+      { label: "IGM", href: "https://o.fbr.gov.pk/newcu2/igm/igm.asp?view=ExternalLink?view=ExternalLink" },
+      { label: "Import Sro", href: "https://www.fbr.gov.pk/ActiveSrosImport" },
+      { label: "Export Sro", href: "https://www.fbr.gov.pk/ActiveSrosExport" },
+      { label: "Hs Code (Explanatory Notes)", href: "https://customnews.pk/harmonized-system-commodity-database/" },
+      { label: "Valuation Ruling", href: "https://customnews.pk/valuation-rulings/" },
+      { label: "Ntn", href: "https://iris.fbr.gov.pk/#verifications" },
+    ],
   },
   {
     icon: FileText,
@@ -53,6 +63,22 @@ export function Services() {
                   </li>
                 ))}
               </ul>
+              {service.links ? (
+                <ol className="mt-6 space-y-2 list-decimal list-inside text-sm text-foreground">
+                  {service.links.map((link) => (
+                    <li key={link.href}>
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-primary underline-offset-4 hover:underline"
+                      >
+                        {link.label}
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              ) : null}
             </div>
           ))}
         </div>
