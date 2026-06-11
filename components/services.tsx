@@ -15,8 +15,7 @@ const services: Service[] = [
   {
     icon: Ship,
     title: "Customs Clearance",
-    description:
-      "Great Eastern Company provides professional Import & Export Customs Clearance services, ensuring smooth, timely, and compliant movement of goods across borders.",
+    description: "Great Eastern Company provides professional Import & Export Customs Clearance services, ensuring smooth, timely, and compliant movement of goods across borders.",
     services: [
       "Import Customs Clearance",
       "Export Customs Clearance",
@@ -32,14 +31,12 @@ const services: Service[] = [
       "Cost-Effective Solutions",
     ],
     closingTitle: "Your Trusted Customs Partner",
-    closing:
-      "We ensure quick, accurate, and hassle-free customs clearance, helping businesses avoid delays and focus on growth.",
+    closing: "We ensure quick, accurate, and hassle-free customs clearance, helping businesses avoid delays and focus on growth.",
   },
   {
     icon: FileText,
     title: "Customs Consultancy",
-    description:
-      "Since 2016, Great Eastern Company has been providing professional Customs Consultancy services, specializing in compliance, regulatory matters, and Export Facilitation Scheme (EFS) solutions.",
+    description: "Since 2016, Great Eastern Company has been providing professional Customs Consultancy services, specializing in compliance, regulatory matters, and Export Facilitation Scheme (EFS) solutions.",
     services: [
       "EFS Registration & Approval Support",
       "Input-Output Analysis",
@@ -56,14 +53,12 @@ const services: Service[] = [
       "Proven Industry Experience",
     ],
     closingTitle: "Your Trusted Consultancy Partner",
-    closing:
-      "We help businesses navigate customs regulations efficiently, ensuring compliance, operational continuity, and long-term success.",
+    closing: "We help businesses navigate customs regulations efficiently, ensuring compliance, operational continuity, and long-term success.",
   },
   {
     icon: Truck,
     title: "Freight Forwarding",
-    description:
-      "Great Eastern Company provides reliable Freight Forwarding solutions through Sea, Air, Road, and Multimodal transport, ensuring efficient cargo movement worldwide.",
+    description: "Great Eastern Company provides reliable Freight Forwarding solutions through Sea, Air, Road, and Multimodal transport, ensuring efficient cargo movement worldwide.",
     services: [
       "Ocean Freight (FCL & LCL)",
       "Air Freight Services",
@@ -80,8 +75,7 @@ const services: Service[] = [
       "End-to-End Logistics Support",
     ],
     closingTitle: "Your Trusted Logistics Partner",
-    closing:
-      "From pickup to final delivery, we ensure secure, timely, and cost-effective transportation of your cargo.",
+    closing: "From pickup to final delivery, we ensure secure, timely, and cost-effective transportation of your cargo.",
   },
 ]
 
