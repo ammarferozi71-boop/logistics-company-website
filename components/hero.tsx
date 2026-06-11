@@ -31,9 +31,7 @@ export function Hero() {
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground leading-tight text-balance">
               Your Trusted Partner in
-              <span className="text-accent"> Custom Clearance</span>,
-              <span className="text-accent"> Custom Consultancy</span>, and
-              <span className="text-accent"> Freight Forwarding</span>
+              <span className="text-accent"> Customs Clearance & Consulting</span>
             </h1>
             
             <p className="mt-6 text-lg text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -42,13 +40,13 @@ export function Hero() {
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground">
                 <Link href="/services">
                   Explore Our Services
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/10 hover:text-primary-foreground">
                 <Link href="/contact">Contact Us</Link>
               </Button>
             </div>

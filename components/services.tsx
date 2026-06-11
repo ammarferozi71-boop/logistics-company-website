@@ -1,63 +1,24 @@
-import { FileText, Ship, Package, Award, Calculator, Shield, Truck, Factory, Zap } from "lucide-react"
+import { FileText, Ship, Truck } from "lucide-react"
 
 const services = [
   {
-    icon: FileText,
-    title: "Custom Act/Rules",
-    description: "Advisory on Customs Act 1969, customs rules, and regulatory compliance for import and export operations.",
-    features: ["Customs Act 1969 guidance", "Customs Rules advisory", "Regulatory interpretation", "Duty liability analysis"],
+    icon: Ship,
+    title: "Customs Clearance",
+    description: "Efficient customs clearance for imports and exports with complete documentation and customs processing.",
+    features: ["Import and export clearance", "Documentation management", "Customs submission support", "Compliance monitoring"],
   },
   {
-    icon: Calculator,
-    title: "Custom Tariff",
-    description: "Custom tariff consultation with accurate duty calculations, classification support, and tariff schedule interpretation for the latest tariff updates.",
-    features: ["Tariff classification", "Duty rate advisory", "Tariff schedule support", "SRO tariff updates"],
+    icon: FileText,
+    title: "Customs Consultancy",
+    description: "Strategic customs consultancy to optimize classification, duties, and compliance for your shipments.",
+    features: ["Duty optimization", "Tariff classification", "Regulatory advisory", "Customs process consulting"],
   },
   {
     icon: Truck,
-    title: "IGM",
-    description: "Import General Manifest support for accurate cargo reporting, manifest preparation, and customs filing.",
-    features: ["IGM filing support", "Cargo manifest accuracy", "Customs declaration help", "Import vessel coordination"],
+    title: "Freight Forwarding",
+    description: "Reliable freight forwarding and logistics coordination for seamless cargo movement.",
+    features: ["Cargo routing", "Freight coordination", "Door-to-door logistics", "Shipment tracking support"],
   },
-  {
-    icon: Package,
-    title: "Import SRO",
-    description: "Import SRO review, notification monitoring, and exemption support to help minimize customs duties and compliance risks.",
-    features: ["Import SRO updates", "Duty exemption review", "Notification monitoring", "Compliance advisory"],
-  },
-  {
-    icon: Ship,
-    title: "Export SRO",
-    description: "Export SRO advisory and notification support for export-oriented businesses and regulatory compliance.",
-    features: ["Export SRO review", "Duty relief support", "Notification tracking", "Export compliance guidance"],
-  },
-  {
-    icon: Shield,
-    title: "HS Code (Explanatory Notes)",
-    description: "HS code classification guidance with explanatory notes to ensure precise customs declarations and tariff compliance.",
-    features: ["HS code classification", "Explanatory note support", "Tariff alignment", "Import/export compliance"],
-  },
-  {
-    icon: Award,
-    title: "Valuation Ruling",
-    description: "Customs valuation ruling guidance to support accurate invoice valuation, tariff calculations, and customs assessment.",
-    features: ["Valuation ruling support", "Invoice valuation review", "Assessment preparation", "Duty computation guidance"],
-  },
-  {
-    icon: FileText,
-    title: "NTN",
-    description: "NTN inquiry and verification services to support importer and exporter registration compliance with customs regulations.",
-    features: ["NTN verification", "Importer validation", "Tax compliance checks", "Registration support"],
-  },
-]
-
-const importClearance = [
-  { icon: Factory, name: "Textile Plant & Machinery" },
-  { icon: Zap, name: "Power Generating Projects" },
-  { icon: Package, name: "Chemical / Dyes" },
-  { icon: Truck, name: "Vehicles" },
-  { icon: Shield, name: "Medical Equipment" },
-  { icon: Calculator, name: "Bulk Cargo & Coal" },
 ]
 
 export function Services() {
@@ -76,9 +37,9 @@ export function Services() {
         </div>
 
         {/* Main services */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {services.map((service) => (
-            <div key={service.title} className="bg-card rounded-2xl p-8 border border-border hover:border-accent/50 transition-all hover:shadow-lg">
+            <div key={service.title} className="bg-card rounded-2xl p-8 border border-border">
               <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary text-primary-foreground mb-6">
                 <service.icon className="h-7 w-7" />
               </div>
@@ -94,53 +55,6 @@ export function Services() {
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* Import clearance categories */}
-        <div className="bg-primary rounded-2xl p-8 sm:p-12">
-          <h3 className="text-2xl font-serif font-bold text-primary-foreground text-center mb-8">
-            Import Clearance Expertise
-          </h3>
-          <p className="text-primary-foreground/80 text-center mb-10 max-w-2xl mx-auto">
-            We handle import clearance for a wide range of commodities and industries, ensuring compliance 
-            and efficiency at every step.
-          </p>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
-            {importClearance.map((item) => (
-              <div key={item.name} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-xl bg-primary-foreground/10 text-accent mb-3 group-hover:bg-accent group-hover:text-primary transition-all">
-                  <item.icon className="h-8 w-8" />
-                </div>
-                <p className="text-sm text-primary-foreground/90">{item.name}</p>
-              </div>
-            ))}
-          </div>
-
-          {/* Additional categories */}
-          <div className="mt-10 pt-8 border-t border-primary-foreground/20">
-            <h4 className="text-lg font-semibold text-primary-foreground mb-4 text-center">We Also Handle</h4>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                "Beverage Plant & Machinery",
-                "Water Treatment Plants",
-                "Computer Equipment",
-                "Leather Goods",
-                "PPRC/PVC Pipes",
-                "Tiles",
-                "Generators",
-                "Construction Machines",
-                "Paper Scrap",
-                "Steel Scrap",
-                "Solar Products",
-                "Carpets"
-              ].map((item) => (
-                <span key={item} className="px-4 py-2 bg-primary-foreground/10 rounded-full text-sm text-primary-foreground/90">
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>

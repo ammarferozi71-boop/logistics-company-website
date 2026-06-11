@@ -50,9 +50,9 @@ export default function Home() {
               </h2>
             </div>
             
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
               {services.map((service) => (
-                <div key={service.title} className="bg-card rounded-xl p-6 border border-border hover:border-accent/50 transition-all hover:shadow-lg text-center">
+                <div key={service.title} className="bg-card rounded-xl p-6 border border-border text-center">
                   <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary text-primary-foreground mb-4">
                     <service.icon className="h-6 w-6" />
                   </div>
@@ -137,10 +137,10 @@ export default function Home() {
               Let us handle the complexities while you focus on your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:scale-105">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground">
                 <Link href="/contact">Get a Free Quote</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 transition-all duration-300 hover:shadow-lg hover:scale-105">
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/10 hover:text-primary-foreground">
                 <a href="tel:+923222164085">Call +92 322 2164085</a>
               </Button>
             </div>
