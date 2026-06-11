@@ -4,33 +4,23 @@ import { Hero } from "@/components/hero"
 import { Footer } from "@/components/footer"
 import { TestimonialsCarousel } from "@/components/testimonials-carousel"
 import { Button } from "@/components/ui/button"
-import { FileText, Ship, Award, ClipboardCheck, ArrowRight, Building2, CheckCircle2 } from "lucide-react"
+import { FileText, Ship, Truck, Award, ClipboardCheck, ArrowRight, Building2, CheckCircle2 } from "lucide-react"
 
 const services = [
   {
-    icon: FileText,
-    title: "Customs Consulting",
-    description: "Expert guidance on customs regulations and compliance",
-  },
-  {
     icon: Ship,
-    title: "Customs Clearance",
-    description: "Swift and efficient customs clearance services",
-  },
-  {
-    icon: Award,
-    title: "EFS Licensing",
-    description: "Export Facilitation Scheme licensing support",
-  },
-  {
-    icon: ClipboardCheck,
-    title: "DTRE Services",
-    description: "Duty & Tax Remission for Exports facilitation",
+    title: "Custom Clearance",
+    description: "Efficient customs clearance for imports and exports, with complete documentation and customs processing.",
   },
   {
     icon: FileText,
-    title: "HS Code Classification",
-    description: "Accurate HS code support for customs declarations and tariff compliance",
+    title: "Custom Consultancy",
+    description: "Strategic customs consultancy to optimize classification, duties, and compliance.",
+  },
+  {
+    icon: Truck,
+    title: "Freight Forwarding",
+    description: "Reliable freight forwarding and logistics coordination for seamless cargo movement.",
   },
 ]
 
@@ -147,11 +137,11 @@ export default function Home() {
               Let us handle the complexities while you focus on your business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 transition-all duration-300 hover:shadow-lg hover:scale-105">
                 <Link href="/contact">Get a Free Quote</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
-                <a href="tel:+922132277113">Call +92 21 32277113</a>
+              <Button asChild size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <a href="tel:+923222164085">Call +92 322 2164085</a>
               </Button>
             </div>
           </div>

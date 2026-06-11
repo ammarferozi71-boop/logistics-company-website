@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Ship, Globe, FileCheck } from "lucide-react"
+import { ArrowRight, Ship, FileText, Truck } from "lucide-react"
 
 export function Hero() {
   return (
@@ -30,8 +30,10 @@ export function Hero() {
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-primary-foreground leading-tight text-balance">
-              Your Trusted Partner in{" "}
-              <span className="text-accent">Customs Clearance</span> & Consulting
+              Your Trusted Partner in
+              <span className="text-accent"> Custom Clearance</span>,
+              <span className="text-accent"> Custom Consultancy</span>, and
+              <span className="text-accent"> Freight Forwarding</span>
             </h1>
             
             <p className="mt-6 text-lg text-primary-foreground/80 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -72,18 +74,18 @@ export function Hero() {
           <div className="hidden lg:grid grid-cols-1 gap-4">
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
               <Ship className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Customs Clearance</h3>
-              <p className="text-primary-foreground/70 text-sm">Swift and efficient clearance of imported goods through customs with precision documentation.</p>
+              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Custom Clearance</h3>
+              <p className="text-primary-foreground/70 text-sm">Swift and efficient clearance of imports and exports through customs with accurate documentation.</p>
             </div>
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
-              <FileCheck className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">EFS Licensing</h3>
-              <p className="text-primary-foreground/70 text-sm">Expert facilitation of Export Facilitation Scheme for duty-free imports and enhanced operations.</p>
+              <FileText className="h-10 w-10 text-accent mb-4" />
+              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Custom Consultancy</h3>
+              <p className="text-primary-foreground/70 text-sm">Strategic customs consultancy for classification, compliance, and duty optimization.</p>
             </div>
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
-              <Globe className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Global Network</h3>
-              <p className="text-primary-foreground/70 text-sm">Extensive global reach connecting businesses with markets across the world efficiently.</p>
+              <Truck className="h-10 w-10 text-accent mb-4" />
+              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Freight Forwarding</h3>
+              <p className="text-primary-foreground/70 text-sm">Reliable freight forwarding and logistics coordination for seamless cargo movement.</p>
             </div>
           </div>
         </div>

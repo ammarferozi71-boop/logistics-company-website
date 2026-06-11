@@ -4,9 +4,9 @@ import { Services } from "@/components/services"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Our Services | Great Eastern Company - Customs Clearance & Consulting",
-  description: "Comprehensive customs solutions including customs consulting, clearance, EFS licensing, and DTRE services. Expert import clearance for textile, power, chemical, and more.",
-  keywords: ["customs clearance services", "EFS licensing", "DTRE services", "customs consulting Pakistan", "import clearance Karachi", "freight forwarding"],
+  title: "Our Services | Great Eastern Company - Custom Clearance & Freight Forwarding",
+  description: "Comprehensive services in custom clearance, custom consultancy, and freight forwarding for importers and exporters in Pakistan.",
+  keywords: ["custom clearance", "custom consultancy", "freight forwarding", "customs services Pakistan", "import export logistics"],
 }
 
 export default function ServicesPage() {

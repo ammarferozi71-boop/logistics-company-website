@@ -174,10 +174,6 @@ export function TrackingContent() {
                 </div>
               </form>
               
-              {/* Demo IDs */}
-              <p className="mt-4 text-sm text-primary-foreground/60">
-                Demo IDs: <button type="button" onClick={() => setTrackingId("GEC-2024-001234")} className="text-accent hover:underline">GEC-2024-001234</button> or <button type="button" onClick={() => setTrackingId("GEC-2024-005678")} className="text-accent hover:underline">GEC-2024-005678</button>
-              </p>
             </div>
           </div>
         </section>

@@ -1,53 +1,53 @@
-import { FileText, Ship, Package, Award, ClipboardCheck, Calculator, Shield, Truck, Factory, Zap } from "lucide-react"
+import { FileText, Ship, Package, Award, Calculator, Shield, Truck, Factory, Zap } from "lucide-react"
 
 const services = [
   {
     icon: FileText,
-    title: "Customs Act & Rules",
-    description: "Advisory on Customs Act 1969, customs rules and regulatory compliance for import and export operations.",
+    title: "Custom Act/Rules",
+    description: "Advisory on Customs Act 1969, customs rules, and regulatory compliance for import and export operations.",
     features: ["Customs Act 1969 guidance", "Customs Rules advisory", "Regulatory interpretation", "Duty liability analysis"],
   },
   {
     icon: Calculator,
-    title: "Customs Tariff",
-    description: "Custom tariff consultation with accurate duty calculations, classification support, and tariff schedule interpretation for the latest 2025-26 tariff schedule.",
-    features: ["2025-26 tariff schedule review", "Duty rate advisory", "HS classification support", "SRO tariff updates"],
+    title: "Custom Tariff",
+    description: "Custom tariff consultation with accurate duty calculations, classification support, and tariff schedule interpretation for the latest tariff updates.",
+    features: ["Tariff classification", "Duty rate advisory", "Tariff schedule support", "SRO tariff updates"],
+  },
+  {
+    icon: Truck,
+    title: "IGM",
+    description: "Import General Manifest support for accurate cargo reporting, manifest preparation, and customs filing.",
+    features: ["IGM filing support", "Cargo manifest accuracy", "Customs declaration help", "Import vessel coordination"],
   },
   {
     icon: Package,
-    title: "HS Code Classification",
-    description: "Harmonized System code classification for precise customs declarations and duty optimization.",
-    features: ["HS code assignment", "Classification accuracy", "Tariff alignment", "Import/export compliance"],
-  },
-  {
-    icon: Shield,
-    title: "NTN Inquiry Support",
-    description: "NTN verification and compliance support for importers, exporters, and customs stakeholders.",
-    features: ["NTN verification", "Importer validation", "Tax compliance checks", "Registration support"],
-  },
-  {
-    icon: ClipboardCheck,
-    title: "SRO Import Advisory",
-    description: "Import-related SRO review, notifications, and exemption support for customs duty relief.",
-    features: ["SRO import updates", "Exemption eligibility", "Notification monitoring", "Import policy advisory"],
+    title: "Import SRO",
+    description: "Import SRO review, notification monitoring, and exemption support to help minimize customs duties and compliance risks.",
+    features: ["Import SRO updates", "Duty exemption review", "Notification monitoring", "Compliance advisory"],
   },
   {
     icon: Ship,
-    title: "Customs Clearance",
-    description: "Swift and efficient customs clearance services ensuring your imported goods are cleared through customs smoothly.",
-    features: ["Regulatory Compliance", "Efficient Processing", "Documentation Mastery", "Challan No. 810"],
+    title: "Export SRO",
+    description: "Export SRO advisory and notification support for export-oriented businesses and regulatory compliance.",
+    features: ["Export SRO review", "Duty relief support", "Notification tracking", "Export compliance guidance"],
+  },
+  {
+    icon: Shield,
+    title: "HS Code (Explanatory Notes)",
+    description: "HS code classification guidance with explanatory notes to ensure precise customs declarations and tariff compliance.",
+    features: ["HS code classification", "Explanatory note support", "Tariff alignment", "Import/export compliance"],
   },
   {
     icon: Award,
-    title: "EFS Licensing",
-    description: "Expert facilitation of Export Facilitation Scheme providing duty-free imports for raw materials, machinery, and commodities.",
-    features: ["Duty Free Imports", "EFS Membership", "License Extension to Clients", "Commercial Importer Support"],
+    title: "Valuation Ruling",
+    description: "Customs valuation ruling guidance to support accurate invoice valuation, tariff calculations, and customs assessment.",
+    features: ["Valuation ruling support", "Invoice valuation review", "Assessment preparation", "Duty computation guidance"],
   },
   {
     icon: FileText,
-    title: "DTRE Services",
-    description: "Duty & Tax Remission for Exports scheme facilitation with a rich history of offering comprehensive DTRE and EOU services.",
-    features: ["Duty Remission", "Tax Exemptions", "EOU Support", "Compliance Management"],
+    title: "NTN",
+    description: "NTN inquiry and verification services to support importer and exporter registration compliance with customs regulations.",
+    features: ["NTN verification", "Importer validation", "Tax compliance checks", "Registration support"],
   },
 ]
 
@@ -68,11 +68,10 @@ export function Services() {
         <div className="text-center mb-16">
           <span className="text-accent font-medium text-sm tracking-wider uppercase">Our Services</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-serif font-bold text-foreground text-balance">
-            Comprehensive Customs Solutions
+            Custom Clearance, Consultancy & Freight Forwarding
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            We provide end-to-end customs clearing and consulting services to help your business navigate 
-            international trade with ease.
+            We deliver focused customs clearance, expert consultancy, and dependable freight forwarding to keep your trade moving.
           </p>
         </div>
 

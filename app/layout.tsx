@@ -15,8 +15,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: 'Great Eastern Company | Custom Clearing Agent & Consultant Since 1981',
-  description: 'Great Eastern Company (GEC) is a pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience. We specialize in customs consulting, import/export clearance, EFS licensing, and DTRE services.',
-  keywords: 'customs clearing agent, customs consultant, import clearance, export clearance, EFS license, DTRE, freight forwarding, Karachi customs, Pakistan logistics, duty free license, customs house agent',
+  description: 'Great Eastern Company (GEC) is a pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience. We specialize in custom clearance, custom consultancy, and freight forwarding for importers and exporters.',
+  keywords: 'custom clearance, custom consultancy, freight forwarding, customs consultant, import clearance, export logistics, Karachi customs, Pakistan logistics, customs house agent',
   authors: [{ name: 'Great Eastern Company' }],
   creator: 'Great Eastern Company',
   publisher: 'Great Eastern Company',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Great Eastern Company | Custom Clearing Agent & Consultant Since 1981',
-    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience. Specializing in customs consulting, import/export clearance, and EFS licensing.',
+    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience. Specializing in custom clearance, custom consultancy, and freight forwarding.',
     url: 'https://greateasterncompany.com',
     siteName: 'Great Eastern Company',
     locale: 'en_US',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Great Eastern Company | Custom Clearing Agent & Consultant',
-    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience.',
+    description: 'Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience in custom clearance, custom consultancy, and freight forwarding.',
     images: ['/images/logo.jpeg'],
   },
   robots: {
@@ -96,14 +96,14 @@ export default function RootLayout({
               "description": "Pioneer customs clearing and forwarding agent in Pakistan with 45+ years of experience",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Suit 209, Techno City Office Tower, Hasrat Muhanni Road",
+                "streetAddress": "Suite No# 513, Chapal Plaza, Hasrat Mohani Rd, Serai Quarter, Karachi, 74000",
                 "addressLocality": "Karachi",
                 "addressCountry": "PK"
               },
               "contactPoint": [
                 {
                   "@type": "ContactPoint",
-                  "telephone": "+92-21-32277113",
+                  "telephone": "+92-322-2164085",
                   "contactType": "customer service"
                 }
               ],

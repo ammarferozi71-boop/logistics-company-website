@@ -13,15 +13,8 @@ const navigation = [
 ]
 
 const services = [
-  "Customs Act & Rules",
-  "Customs Tariff",
-  "HS Code Classification",
-  "NTN Inquiry Support",
-  "SRO Import Advisory",
-  "Customs Clearance",
-  "EFS Licensing",
-  "DTRE Services",
-  "Import Clearance",
+  "Custom Clearance",
+  "Custom Consultancy",
   "Freight Forwarding",
 ]
 
@@ -48,7 +41,7 @@ export function Footer() {
             </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-6">
               Pioneer clearing & forwarding agents with 45+ years of experience, trust, and efficient service 
-              in customs clearance and consulting.
+              in custom clearance, custom consultancy, and freight forwarding.
             </p>
             <p className="text-sm text-primary-foreground/70">
               <strong className="text-accent">License No. 810</strong>
@@ -90,13 +83,13 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-sm text-primary-foreground/80">
-                  Suit 209, Techno City Office Tower, Hasrat Muhanni Road, Karachi
+                  Suite No# 513, Chapal Plaza, Hasrat Mohani Rd, Serai Quarter, Karachi, 74000
                 </span>
               </li>
               <li>
-                <a href="tel:+922132277113" className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
+                <a href="tel:+923222164085" className="flex items-center gap-3 text-sm text-primary-foreground/80 hover:text-accent transition-colors">
                   <Phone className="h-5 w-5 text-accent" />
-                  +92 21 32277113 / 115
+                  +92 322 2164085 / +92 308 2292513
                 </a>
               </li>
               <li>

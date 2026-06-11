@@ -9,14 +9,14 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Office Address",
-    value: "Suit 209, Techno City Office Tower, Hasrat Muhanni Road, Karachi",
+    value: "Suite No# 513, Chapal Plaza, Hasrat Mohani Rd, Serai Quarter, Karachi, 74000",
     href: null,
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+92 21 32277113 / 115",
-    href: "tel:+922132277113",
+    value: "+92 322 2164085 / +92 308 2292513",
+    href: "tel:+923222164085",
   },
   {
     icon: Mail,
@@ -102,7 +102,7 @@ export function Contact() {
                       <Input
                         id="name"
                         type="text"
-                        placeholder="John Doe"
+                        placeholder="Enter your name"
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="pl-10"
@@ -119,7 +119,7 @@ export function Contact() {
                       <Input
                         id="company"
                         type="text"
-                        placeholder="Your Company"
+                        placeholder="Enter your company name"
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
                         className="pl-10"

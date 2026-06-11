@@ -25,9 +25,9 @@ export function Header() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between py-2 text-sm">
             <div className="hidden sm:flex items-center gap-6">
-              <a href="tel:+922132277113" className="flex items-center gap-2 hover:text-accent transition-colors">
+              <a href="tel:+923222164085" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Phone className="h-4 w-4" />
-                <span>+92 21 32277113</span>
+                <span>+92 322 2164085</span>
               </a>
               <a href="mailto:info@greateasterncompany.com" className="flex items-center gap-2 hover:text-accent transition-colors">
                 <Mail className="h-4 w-4" />
