@@ -9,12 +9,12 @@ import { FileText, Ship, Truck, Award, ClipboardCheck, ArrowRight, Building2, Ch
 const services = [
   {
     icon: Ship,
-    title: "Custom Clearance",
+    title: "Customs Clearance",
     description: "Efficient customs clearance for imports and exports, with complete documentation and customs processing.",
   },
   {
     icon: FileText,
-    title: "Custom Consultancy",
+    title: "Customs Consultancy",
     description: "Strategic customs consultancy to optimize classification, duties, and compliance.",
   },
   {

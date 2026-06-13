@@ -55,7 +55,7 @@ export function Header() {
             />
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-primary leading-tight">Great Eastern Company</h1>
-              <p className="text-xs text-muted-foreground">Custom Clearing Agent & Consultant</p>
+              <p className="text-xs text-muted-foreground">Customs Clearing Agent & Consultant</p>
             </div>
           </Link>
 

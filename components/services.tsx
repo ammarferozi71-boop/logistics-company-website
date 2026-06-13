@@ -98,7 +98,7 @@ export function Services() {
         <div className="text-center mb-16">
           <span className="text-accent font-medium text-sm tracking-wider uppercase">Our Services</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-serif font-bold text-foreground text-balance">
-            Custom Clearance, Consultancy & Freight Forwarding
+            Customs Clearance, Customs Consultancy & Freight Forwarding
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
             We deliver focused customs clearance, expert consultancy, and dependable freight forwarding to keep your trade moving.

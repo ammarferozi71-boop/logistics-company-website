@@ -72,12 +72,12 @@ export function Hero() {
           <div className="hidden lg:grid grid-cols-1 gap-4">
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
               <Ship className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Custom Clearance</h3>
+              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Customs Clearance</h3>
               <p className="text-primary-foreground/70 text-sm">Swift and efficient clearance of imports and exports through customs with accurate documentation.</p>
             </div>
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
               <FileText className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Custom Consultancy</h3>
+              <h3 className="text-lg font-semibold text-primary-foreground mb-2">Customs Consultancy</h3>
               <p className="text-primary-foreground/70 text-sm">Strategic customs consultancy for classification, compliance, and duty optimization.</p>
             </div>
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">

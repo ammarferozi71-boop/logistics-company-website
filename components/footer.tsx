@@ -13,8 +13,8 @@ const navigation = [
 ]
 
 const services = [
-  "Custom Clearance",
-  "Custom Consultancy",
+  "Customs Clearance",
+  "Customs Consultancy",
   "Freight Forwarding",
 ]
 
@@ -41,7 +41,7 @@ export function Footer() {
             </Link>
             <p className="text-sm text-primary-foreground/80 leading-relaxed mb-6">
               Pioneer clearing & forwarding agents with 45+ years of experience, trust, and efficient service 
-              in custom clearance, custom consultancy, and freight forwarding.
+              in customs clearance, customs consultancy, and freight forwarding.
             </p>
             <p className="text-sm text-primary-foreground/70">
               <strong className="text-accent">License No. 810</strong>

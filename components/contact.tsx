@@ -34,6 +34,7 @@ const contactInfo = [
 
 const team = [
   { name: "Muhammad Akhtar Hashmi", phone: "+92 321-8700787" },
+  { name: "Muhammad Anwaar Hashmi", phone: "+92 308 2292513" },
 ]
 
 export function Contact() {
