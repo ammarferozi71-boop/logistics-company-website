@@ -47,20 +47,35 @@ export function Contact() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState("")
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    setIsSubmitting(false)
-    setSubmitted(true)
-    setFormData({ name: "", company: "", email: "", phone: "", message: "" })
-    
-    // Reset success message after 5 seconds
-    setTimeout(() => setSubmitted(false), 5000)
+    setError("")
+
+    try {
+      const response = await fetch("/contact.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      const result = await response.json()
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || "Unable to send message. Please try again later.")
+      }
+
+      setSubmitted(true)
+      setFormData({ name: "", company: "", email: "", phone: "", message: "" })
+      setTimeout(() => setSubmitted(false), 5000)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -82,7 +97,11 @@ export function Contact() {
           {/* Contact form */}
           <div className="bg-card rounded-2xl p-8 border border-border">
             <h3 className="text-xl font-semibold text-foreground mb-6">Send us a Message</h3>
-            
+            {error ? (
+              <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-4 text-sm text-destructive mb-6">
+                {error}
+              </div>
+            ) : null}
             {submitted ? (
               <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 text-center">
                 <div className="w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
